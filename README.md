@@ -75,8 +75,7 @@ lib/
 1️⃣ **Clone the Repository**  
 
 ```bash
-git clone https://github.com/yourusername/flutter-country-app.git
-cd flutter-country-app
+git clone https://github.com/AdelSadiq/Flagify.git
 ```
   
 2️⃣ **Install Dependencies**  
