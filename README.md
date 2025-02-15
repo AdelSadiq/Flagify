@@ -1,5 +1,5 @@
 
-# **🌍 Flutter Country List App**  
+# **🌍 Flagify App**  
 
 A Flutter application that fetches and displays a list of countries using **GraphQL**, **BLoC**, and **Clean Architecture**.  
 
