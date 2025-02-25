@@ -1,7 +1,7 @@
+import 'package:flagify/config/di/injectable.dart';
 import 'package:flagify/core/textstyle/textstyle.dart';
-import 'package:flagify/data/core/di/injectable.dart';
-import 'package:flagify/presentation/home/application/home_bloc.dart';
-import 'package:flagify/presentation/home/view/screen_home.dart';
+import 'package:flagify/home/presentation/bloc/home_bloc.dart';
+import 'package:flagify/home/presentation/screens/screen_home.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

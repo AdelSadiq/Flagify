@@ -21,6 +21,9 @@ mixin _$HomeEvent {
     required TResult Function() getCountriesList,
     required TResult Function(bool isConnected) setIsConnected,
     required TResult Function(List<CountryModel> filteredList) setFilteredList,
+    required TResult Function(CountryModel country) addToFavorites,
+    required TResult Function(CountryModel country) removeFromFavorites,
+    required TResult Function() getFavoritesList,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -28,6 +31,9 @@ mixin _$HomeEvent {
     TResult? Function()? getCountriesList,
     TResult? Function(bool isConnected)? setIsConnected,
     TResult? Function(List<CountryModel> filteredList)? setFilteredList,
+    TResult? Function(CountryModel country)? addToFavorites,
+    TResult? Function(CountryModel country)? removeFromFavorites,
+    TResult? Function()? getFavoritesList,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -35,6 +41,9 @@ mixin _$HomeEvent {
     TResult Function()? getCountriesList,
     TResult Function(bool isConnected)? setIsConnected,
     TResult Function(List<CountryModel> filteredList)? setFilteredList,
+    TResult Function(CountryModel country)? addToFavorites,
+    TResult Function(CountryModel country)? removeFromFavorites,
+    TResult Function()? getFavoritesList,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -43,6 +52,9 @@ mixin _$HomeEvent {
     required TResult Function(_GetCountriesList value) getCountriesList,
     required TResult Function(_SetIsConnected value) setIsConnected,
     required TResult Function(_SetFilteredList value) setFilteredList,
+    required TResult Function(_AddToFavorites value) addToFavorites,
+    required TResult Function(_RemoveFromFavorites value) removeFromFavorites,
+    required TResult Function(_GetFavoritesList value) getFavoritesList,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -50,6 +62,9 @@ mixin _$HomeEvent {
     TResult? Function(_GetCountriesList value)? getCountriesList,
     TResult? Function(_SetIsConnected value)? setIsConnected,
     TResult? Function(_SetFilteredList value)? setFilteredList,
+    TResult? Function(_AddToFavorites value)? addToFavorites,
+    TResult? Function(_RemoveFromFavorites value)? removeFromFavorites,
+    TResult? Function(_GetFavoritesList value)? getFavoritesList,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -57,6 +72,9 @@ mixin _$HomeEvent {
     TResult Function(_GetCountriesList value)? getCountriesList,
     TResult Function(_SetIsConnected value)? setIsConnected,
     TResult Function(_SetFilteredList value)? setFilteredList,
+    TResult Function(_AddToFavorites value)? addToFavorites,
+    TResult Function(_RemoveFromFavorites value)? removeFromFavorites,
+    TResult Function(_GetFavoritesList value)? getFavoritesList,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -126,6 +144,9 @@ class _$GetCountriesListImpl implements _GetCountriesList {
     required TResult Function() getCountriesList,
     required TResult Function(bool isConnected) setIsConnected,
     required TResult Function(List<CountryModel> filteredList) setFilteredList,
+    required TResult Function(CountryModel country) addToFavorites,
+    required TResult Function(CountryModel country) removeFromFavorites,
+    required TResult Function() getFavoritesList,
   }) {
     return getCountriesList();
   }
@@ -136,6 +157,9 @@ class _$GetCountriesListImpl implements _GetCountriesList {
     TResult? Function()? getCountriesList,
     TResult? Function(bool isConnected)? setIsConnected,
     TResult? Function(List<CountryModel> filteredList)? setFilteredList,
+    TResult? Function(CountryModel country)? addToFavorites,
+    TResult? Function(CountryModel country)? removeFromFavorites,
+    TResult? Function()? getFavoritesList,
   }) {
     return getCountriesList?.call();
   }
@@ -146,6 +170,9 @@ class _$GetCountriesListImpl implements _GetCountriesList {
     TResult Function()? getCountriesList,
     TResult Function(bool isConnected)? setIsConnected,
     TResult Function(List<CountryModel> filteredList)? setFilteredList,
+    TResult Function(CountryModel country)? addToFavorites,
+    TResult Function(CountryModel country)? removeFromFavorites,
+    TResult Function()? getFavoritesList,
     required TResult orElse(),
   }) {
     if (getCountriesList != null) {
@@ -160,6 +187,9 @@ class _$GetCountriesListImpl implements _GetCountriesList {
     required TResult Function(_GetCountriesList value) getCountriesList,
     required TResult Function(_SetIsConnected value) setIsConnected,
     required TResult Function(_SetFilteredList value) setFilteredList,
+    required TResult Function(_AddToFavorites value) addToFavorites,
+    required TResult Function(_RemoveFromFavorites value) removeFromFavorites,
+    required TResult Function(_GetFavoritesList value) getFavoritesList,
   }) {
     return getCountriesList(this);
   }
@@ -170,6 +200,9 @@ class _$GetCountriesListImpl implements _GetCountriesList {
     TResult? Function(_GetCountriesList value)? getCountriesList,
     TResult? Function(_SetIsConnected value)? setIsConnected,
     TResult? Function(_SetFilteredList value)? setFilteredList,
+    TResult? Function(_AddToFavorites value)? addToFavorites,
+    TResult? Function(_RemoveFromFavorites value)? removeFromFavorites,
+    TResult? Function(_GetFavoritesList value)? getFavoritesList,
   }) {
     return getCountriesList?.call(this);
   }
@@ -180,6 +213,9 @@ class _$GetCountriesListImpl implements _GetCountriesList {
     TResult Function(_GetCountriesList value)? getCountriesList,
     TResult Function(_SetIsConnected value)? setIsConnected,
     TResult Function(_SetFilteredList value)? setFilteredList,
+    TResult Function(_AddToFavorites value)? addToFavorites,
+    TResult Function(_RemoveFromFavorites value)? removeFromFavorites,
+    TResult Function(_GetFavoritesList value)? getFavoritesList,
     required TResult orElse(),
   }) {
     if (getCountriesList != null) {
@@ -266,6 +302,9 @@ class _$SetIsConnectedImpl implements _SetIsConnected {
     required TResult Function() getCountriesList,
     required TResult Function(bool isConnected) setIsConnected,
     required TResult Function(List<CountryModel> filteredList) setFilteredList,
+    required TResult Function(CountryModel country) addToFavorites,
+    required TResult Function(CountryModel country) removeFromFavorites,
+    required TResult Function() getFavoritesList,
   }) {
     return setIsConnected(isConnected);
   }
@@ -276,6 +315,9 @@ class _$SetIsConnectedImpl implements _SetIsConnected {
     TResult? Function()? getCountriesList,
     TResult? Function(bool isConnected)? setIsConnected,
     TResult? Function(List<CountryModel> filteredList)? setFilteredList,
+    TResult? Function(CountryModel country)? addToFavorites,
+    TResult? Function(CountryModel country)? removeFromFavorites,
+    TResult? Function()? getFavoritesList,
   }) {
     return setIsConnected?.call(isConnected);
   }
@@ -286,6 +328,9 @@ class _$SetIsConnectedImpl implements _SetIsConnected {
     TResult Function()? getCountriesList,
     TResult Function(bool isConnected)? setIsConnected,
     TResult Function(List<CountryModel> filteredList)? setFilteredList,
+    TResult Function(CountryModel country)? addToFavorites,
+    TResult Function(CountryModel country)? removeFromFavorites,
+    TResult Function()? getFavoritesList,
     required TResult orElse(),
   }) {
     if (setIsConnected != null) {
@@ -300,6 +345,9 @@ class _$SetIsConnectedImpl implements _SetIsConnected {
     required TResult Function(_GetCountriesList value) getCountriesList,
     required TResult Function(_SetIsConnected value) setIsConnected,
     required TResult Function(_SetFilteredList value) setFilteredList,
+    required TResult Function(_AddToFavorites value) addToFavorites,
+    required TResult Function(_RemoveFromFavorites value) removeFromFavorites,
+    required TResult Function(_GetFavoritesList value) getFavoritesList,
   }) {
     return setIsConnected(this);
   }
@@ -310,6 +358,9 @@ class _$SetIsConnectedImpl implements _SetIsConnected {
     TResult? Function(_GetCountriesList value)? getCountriesList,
     TResult? Function(_SetIsConnected value)? setIsConnected,
     TResult? Function(_SetFilteredList value)? setFilteredList,
+    TResult? Function(_AddToFavorites value)? addToFavorites,
+    TResult? Function(_RemoveFromFavorites value)? removeFromFavorites,
+    TResult? Function(_GetFavoritesList value)? getFavoritesList,
   }) {
     return setIsConnected?.call(this);
   }
@@ -320,6 +371,9 @@ class _$SetIsConnectedImpl implements _SetIsConnected {
     TResult Function(_GetCountriesList value)? getCountriesList,
     TResult Function(_SetIsConnected value)? setIsConnected,
     TResult Function(_SetFilteredList value)? setFilteredList,
+    TResult Function(_AddToFavorites value)? addToFavorites,
+    TResult Function(_RemoveFromFavorites value)? removeFromFavorites,
+    TResult Function(_GetFavoritesList value)? getFavoritesList,
     required TResult orElse(),
   }) {
     if (setIsConnected != null) {
@@ -422,6 +476,9 @@ class _$SetFilteredListImpl implements _SetFilteredList {
     required TResult Function() getCountriesList,
     required TResult Function(bool isConnected) setIsConnected,
     required TResult Function(List<CountryModel> filteredList) setFilteredList,
+    required TResult Function(CountryModel country) addToFavorites,
+    required TResult Function(CountryModel country) removeFromFavorites,
+    required TResult Function() getFavoritesList,
   }) {
     return setFilteredList(filteredList);
   }
@@ -432,6 +489,9 @@ class _$SetFilteredListImpl implements _SetFilteredList {
     TResult? Function()? getCountriesList,
     TResult? Function(bool isConnected)? setIsConnected,
     TResult? Function(List<CountryModel> filteredList)? setFilteredList,
+    TResult? Function(CountryModel country)? addToFavorites,
+    TResult? Function(CountryModel country)? removeFromFavorites,
+    TResult? Function()? getFavoritesList,
   }) {
     return setFilteredList?.call(filteredList);
   }
@@ -442,6 +502,9 @@ class _$SetFilteredListImpl implements _SetFilteredList {
     TResult Function()? getCountriesList,
     TResult Function(bool isConnected)? setIsConnected,
     TResult Function(List<CountryModel> filteredList)? setFilteredList,
+    TResult Function(CountryModel country)? addToFavorites,
+    TResult Function(CountryModel country)? removeFromFavorites,
+    TResult Function()? getFavoritesList,
     required TResult orElse(),
   }) {
     if (setFilteredList != null) {
@@ -456,6 +519,9 @@ class _$SetFilteredListImpl implements _SetFilteredList {
     required TResult Function(_GetCountriesList value) getCountriesList,
     required TResult Function(_SetIsConnected value) setIsConnected,
     required TResult Function(_SetFilteredList value) setFilteredList,
+    required TResult Function(_AddToFavorites value) addToFavorites,
+    required TResult Function(_RemoveFromFavorites value) removeFromFavorites,
+    required TResult Function(_GetFavoritesList value) getFavoritesList,
   }) {
     return setFilteredList(this);
   }
@@ -466,6 +532,9 @@ class _$SetFilteredListImpl implements _SetFilteredList {
     TResult? Function(_GetCountriesList value)? getCountriesList,
     TResult? Function(_SetIsConnected value)? setIsConnected,
     TResult? Function(_SetFilteredList value)? setFilteredList,
+    TResult? Function(_AddToFavorites value)? addToFavorites,
+    TResult? Function(_RemoveFromFavorites value)? removeFromFavorites,
+    TResult? Function(_GetFavoritesList value)? getFavoritesList,
   }) {
     return setFilteredList?.call(this);
   }
@@ -476,6 +545,9 @@ class _$SetFilteredListImpl implements _SetFilteredList {
     TResult Function(_GetCountriesList value)? getCountriesList,
     TResult Function(_SetIsConnected value)? setIsConnected,
     TResult Function(_SetFilteredList value)? setFilteredList,
+    TResult Function(_AddToFavorites value)? addToFavorites,
+    TResult Function(_RemoveFromFavorites value)? removeFromFavorites,
+    TResult Function(_GetFavoritesList value)? getFavoritesList,
     required TResult orElse(),
   }) {
     if (setFilteredList != null) {
@@ -499,6 +571,467 @@ abstract class _SetFilteredList implements HomeEvent {
 }
 
 /// @nodoc
+abstract class _$$AddToFavoritesImplCopyWith<$Res> {
+  factory _$$AddToFavoritesImplCopyWith(_$AddToFavoritesImpl value,
+          $Res Function(_$AddToFavoritesImpl) then) =
+      __$$AddToFavoritesImplCopyWithImpl<$Res>;
+  @useResult
+  $Res call({CountryModel country});
+}
+
+/// @nodoc
+class __$$AddToFavoritesImplCopyWithImpl<$Res>
+    extends _$HomeEventCopyWithImpl<$Res, _$AddToFavoritesImpl>
+    implements _$$AddToFavoritesImplCopyWith<$Res> {
+  __$$AddToFavoritesImplCopyWithImpl(
+      _$AddToFavoritesImpl _value, $Res Function(_$AddToFavoritesImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of HomeEvent
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? country = null,
+  }) {
+    return _then(_$AddToFavoritesImpl(
+      country: null == country
+          ? _value.country
+          : country // ignore: cast_nullable_to_non_nullable
+              as CountryModel,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$AddToFavoritesImpl implements _AddToFavorites {
+  const _$AddToFavoritesImpl({required this.country});
+
+  @override
+  final CountryModel country;
+
+  @override
+  String toString() {
+    return 'HomeEvent.addToFavorites(country: $country)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$AddToFavoritesImpl &&
+            (identical(other.country, country) || other.country == country));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, country);
+
+  /// Create a copy of HomeEvent
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$AddToFavoritesImplCopyWith<_$AddToFavoritesImpl> get copyWith =>
+      __$$AddToFavoritesImplCopyWithImpl<_$AddToFavoritesImpl>(
+          this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() getCountriesList,
+    required TResult Function(bool isConnected) setIsConnected,
+    required TResult Function(List<CountryModel> filteredList) setFilteredList,
+    required TResult Function(CountryModel country) addToFavorites,
+    required TResult Function(CountryModel country) removeFromFavorites,
+    required TResult Function() getFavoritesList,
+  }) {
+    return addToFavorites(country);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? getCountriesList,
+    TResult? Function(bool isConnected)? setIsConnected,
+    TResult? Function(List<CountryModel> filteredList)? setFilteredList,
+    TResult? Function(CountryModel country)? addToFavorites,
+    TResult? Function(CountryModel country)? removeFromFavorites,
+    TResult? Function()? getFavoritesList,
+  }) {
+    return addToFavorites?.call(country);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? getCountriesList,
+    TResult Function(bool isConnected)? setIsConnected,
+    TResult Function(List<CountryModel> filteredList)? setFilteredList,
+    TResult Function(CountryModel country)? addToFavorites,
+    TResult Function(CountryModel country)? removeFromFavorites,
+    TResult Function()? getFavoritesList,
+    required TResult orElse(),
+  }) {
+    if (addToFavorites != null) {
+      return addToFavorites(country);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_GetCountriesList value) getCountriesList,
+    required TResult Function(_SetIsConnected value) setIsConnected,
+    required TResult Function(_SetFilteredList value) setFilteredList,
+    required TResult Function(_AddToFavorites value) addToFavorites,
+    required TResult Function(_RemoveFromFavorites value) removeFromFavorites,
+    required TResult Function(_GetFavoritesList value) getFavoritesList,
+  }) {
+    return addToFavorites(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_GetCountriesList value)? getCountriesList,
+    TResult? Function(_SetIsConnected value)? setIsConnected,
+    TResult? Function(_SetFilteredList value)? setFilteredList,
+    TResult? Function(_AddToFavorites value)? addToFavorites,
+    TResult? Function(_RemoveFromFavorites value)? removeFromFavorites,
+    TResult? Function(_GetFavoritesList value)? getFavoritesList,
+  }) {
+    return addToFavorites?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_GetCountriesList value)? getCountriesList,
+    TResult Function(_SetIsConnected value)? setIsConnected,
+    TResult Function(_SetFilteredList value)? setFilteredList,
+    TResult Function(_AddToFavorites value)? addToFavorites,
+    TResult Function(_RemoveFromFavorites value)? removeFromFavorites,
+    TResult Function(_GetFavoritesList value)? getFavoritesList,
+    required TResult orElse(),
+  }) {
+    if (addToFavorites != null) {
+      return addToFavorites(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _AddToFavorites implements HomeEvent {
+  const factory _AddToFavorites({required final CountryModel country}) =
+      _$AddToFavoritesImpl;
+
+  CountryModel get country;
+
+  /// Create a copy of HomeEvent
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$AddToFavoritesImplCopyWith<_$AddToFavoritesImpl> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$RemoveFromFavoritesImplCopyWith<$Res> {
+  factory _$$RemoveFromFavoritesImplCopyWith(_$RemoveFromFavoritesImpl value,
+          $Res Function(_$RemoveFromFavoritesImpl) then) =
+      __$$RemoveFromFavoritesImplCopyWithImpl<$Res>;
+  @useResult
+  $Res call({CountryModel country});
+}
+
+/// @nodoc
+class __$$RemoveFromFavoritesImplCopyWithImpl<$Res>
+    extends _$HomeEventCopyWithImpl<$Res, _$RemoveFromFavoritesImpl>
+    implements _$$RemoveFromFavoritesImplCopyWith<$Res> {
+  __$$RemoveFromFavoritesImplCopyWithImpl(_$RemoveFromFavoritesImpl _value,
+      $Res Function(_$RemoveFromFavoritesImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of HomeEvent
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? country = null,
+  }) {
+    return _then(_$RemoveFromFavoritesImpl(
+      country: null == country
+          ? _value.country
+          : country // ignore: cast_nullable_to_non_nullable
+              as CountryModel,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$RemoveFromFavoritesImpl implements _RemoveFromFavorites {
+  const _$RemoveFromFavoritesImpl({required this.country});
+
+  @override
+  final CountryModel country;
+
+  @override
+  String toString() {
+    return 'HomeEvent.removeFromFavorites(country: $country)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$RemoveFromFavoritesImpl &&
+            (identical(other.country, country) || other.country == country));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, country);
+
+  /// Create a copy of HomeEvent
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$RemoveFromFavoritesImplCopyWith<_$RemoveFromFavoritesImpl> get copyWith =>
+      __$$RemoveFromFavoritesImplCopyWithImpl<_$RemoveFromFavoritesImpl>(
+          this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() getCountriesList,
+    required TResult Function(bool isConnected) setIsConnected,
+    required TResult Function(List<CountryModel> filteredList) setFilteredList,
+    required TResult Function(CountryModel country) addToFavorites,
+    required TResult Function(CountryModel country) removeFromFavorites,
+    required TResult Function() getFavoritesList,
+  }) {
+    return removeFromFavorites(country);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? getCountriesList,
+    TResult? Function(bool isConnected)? setIsConnected,
+    TResult? Function(List<CountryModel> filteredList)? setFilteredList,
+    TResult? Function(CountryModel country)? addToFavorites,
+    TResult? Function(CountryModel country)? removeFromFavorites,
+    TResult? Function()? getFavoritesList,
+  }) {
+    return removeFromFavorites?.call(country);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? getCountriesList,
+    TResult Function(bool isConnected)? setIsConnected,
+    TResult Function(List<CountryModel> filteredList)? setFilteredList,
+    TResult Function(CountryModel country)? addToFavorites,
+    TResult Function(CountryModel country)? removeFromFavorites,
+    TResult Function()? getFavoritesList,
+    required TResult orElse(),
+  }) {
+    if (removeFromFavorites != null) {
+      return removeFromFavorites(country);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_GetCountriesList value) getCountriesList,
+    required TResult Function(_SetIsConnected value) setIsConnected,
+    required TResult Function(_SetFilteredList value) setFilteredList,
+    required TResult Function(_AddToFavorites value) addToFavorites,
+    required TResult Function(_RemoveFromFavorites value) removeFromFavorites,
+    required TResult Function(_GetFavoritesList value) getFavoritesList,
+  }) {
+    return removeFromFavorites(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_GetCountriesList value)? getCountriesList,
+    TResult? Function(_SetIsConnected value)? setIsConnected,
+    TResult? Function(_SetFilteredList value)? setFilteredList,
+    TResult? Function(_AddToFavorites value)? addToFavorites,
+    TResult? Function(_RemoveFromFavorites value)? removeFromFavorites,
+    TResult? Function(_GetFavoritesList value)? getFavoritesList,
+  }) {
+    return removeFromFavorites?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_GetCountriesList value)? getCountriesList,
+    TResult Function(_SetIsConnected value)? setIsConnected,
+    TResult Function(_SetFilteredList value)? setFilteredList,
+    TResult Function(_AddToFavorites value)? addToFavorites,
+    TResult Function(_RemoveFromFavorites value)? removeFromFavorites,
+    TResult Function(_GetFavoritesList value)? getFavoritesList,
+    required TResult orElse(),
+  }) {
+    if (removeFromFavorites != null) {
+      return removeFromFavorites(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _RemoveFromFavorites implements HomeEvent {
+  const factory _RemoveFromFavorites({required final CountryModel country}) =
+      _$RemoveFromFavoritesImpl;
+
+  CountryModel get country;
+
+  /// Create a copy of HomeEvent
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$RemoveFromFavoritesImplCopyWith<_$RemoveFromFavoritesImpl> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$GetFavoritesListImplCopyWith<$Res> {
+  factory _$$GetFavoritesListImplCopyWith(_$GetFavoritesListImpl value,
+          $Res Function(_$GetFavoritesListImpl) then) =
+      __$$GetFavoritesListImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$GetFavoritesListImplCopyWithImpl<$Res>
+    extends _$HomeEventCopyWithImpl<$Res, _$GetFavoritesListImpl>
+    implements _$$GetFavoritesListImplCopyWith<$Res> {
+  __$$GetFavoritesListImplCopyWithImpl(_$GetFavoritesListImpl _value,
+      $Res Function(_$GetFavoritesListImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of HomeEvent
+  /// with the given fields replaced by the non-null parameter values.
+}
+
+/// @nodoc
+
+class _$GetFavoritesListImpl implements _GetFavoritesList {
+  const _$GetFavoritesListImpl();
+
+  @override
+  String toString() {
+    return 'HomeEvent.getFavoritesList()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$GetFavoritesListImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() getCountriesList,
+    required TResult Function(bool isConnected) setIsConnected,
+    required TResult Function(List<CountryModel> filteredList) setFilteredList,
+    required TResult Function(CountryModel country) addToFavorites,
+    required TResult Function(CountryModel country) removeFromFavorites,
+    required TResult Function() getFavoritesList,
+  }) {
+    return getFavoritesList();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? getCountriesList,
+    TResult? Function(bool isConnected)? setIsConnected,
+    TResult? Function(List<CountryModel> filteredList)? setFilteredList,
+    TResult? Function(CountryModel country)? addToFavorites,
+    TResult? Function(CountryModel country)? removeFromFavorites,
+    TResult? Function()? getFavoritesList,
+  }) {
+    return getFavoritesList?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? getCountriesList,
+    TResult Function(bool isConnected)? setIsConnected,
+    TResult Function(List<CountryModel> filteredList)? setFilteredList,
+    TResult Function(CountryModel country)? addToFavorites,
+    TResult Function(CountryModel country)? removeFromFavorites,
+    TResult Function()? getFavoritesList,
+    required TResult orElse(),
+  }) {
+    if (getFavoritesList != null) {
+      return getFavoritesList();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_GetCountriesList value) getCountriesList,
+    required TResult Function(_SetIsConnected value) setIsConnected,
+    required TResult Function(_SetFilteredList value) setFilteredList,
+    required TResult Function(_AddToFavorites value) addToFavorites,
+    required TResult Function(_RemoveFromFavorites value) removeFromFavorites,
+    required TResult Function(_GetFavoritesList value) getFavoritesList,
+  }) {
+    return getFavoritesList(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_GetCountriesList value)? getCountriesList,
+    TResult? Function(_SetIsConnected value)? setIsConnected,
+    TResult? Function(_SetFilteredList value)? setFilteredList,
+    TResult? Function(_AddToFavorites value)? addToFavorites,
+    TResult? Function(_RemoveFromFavorites value)? removeFromFavorites,
+    TResult? Function(_GetFavoritesList value)? getFavoritesList,
+  }) {
+    return getFavoritesList?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_GetCountriesList value)? getCountriesList,
+    TResult Function(_SetIsConnected value)? setIsConnected,
+    TResult Function(_SetFilteredList value)? setFilteredList,
+    TResult Function(_AddToFavorites value)? addToFavorites,
+    TResult Function(_RemoveFromFavorites value)? removeFromFavorites,
+    TResult Function(_GetFavoritesList value)? getFavoritesList,
+    required TResult orElse(),
+  }) {
+    if (getFavoritesList != null) {
+      return getFavoritesList(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _GetFavoritesList implements HomeEvent {
+  const factory _GetFavoritesList() = _$GetFavoritesListImpl;
+}
+
+/// @nodoc
 mixin _$HomeState {
   bool get isLoading => throw _privateConstructorUsedError;
   bool get isError => throw _privateConstructorUsedError;
@@ -508,6 +1041,7 @@ mixin _$HomeState {
   bool get isConnected => throw _privateConstructorUsedError;
   List<CountryModel> get filterCountriesList =>
       throw _privateConstructorUsedError;
+  List<CountryModel> get favoritesList => throw _privateConstructorUsedError;
 
   /// Create a copy of HomeState
   /// with the given fields replaced by the non-null parameter values.
@@ -527,7 +1061,8 @@ abstract class $HomeStateCopyWith<$Res> {
       String errorMessage,
       List<CountryModel> countriesList,
       bool isConnected,
-      List<CountryModel> filterCountriesList});
+      List<CountryModel> filterCountriesList,
+      List<CountryModel> favoritesList});
 }
 
 /// @nodoc
@@ -551,6 +1086,7 @@ class _$HomeStateCopyWithImpl<$Res, $Val extends HomeState>
     Object? countriesList = null,
     Object? isConnected = null,
     Object? filterCountriesList = null,
+    Object? favoritesList = null,
   }) {
     return _then(_value.copyWith(
       isLoading: null == isLoading
@@ -577,6 +1113,10 @@ class _$HomeStateCopyWithImpl<$Res, $Val extends HomeState>
           ? _value.filterCountriesList
           : filterCountriesList // ignore: cast_nullable_to_non_nullable
               as List<CountryModel>,
+      favoritesList: null == favoritesList
+          ? _value.favoritesList
+          : favoritesList // ignore: cast_nullable_to_non_nullable
+              as List<CountryModel>,
     ) as $Val);
   }
 }
@@ -595,7 +1135,8 @@ abstract class _$$InitialImplCopyWith<$Res>
       String errorMessage,
       List<CountryModel> countriesList,
       bool isConnected,
-      List<CountryModel> filterCountriesList});
+      List<CountryModel> filterCountriesList,
+      List<CountryModel> favoritesList});
 }
 
 /// @nodoc
@@ -617,6 +1158,7 @@ class __$$InitialImplCopyWithImpl<$Res>
     Object? countriesList = null,
     Object? isConnected = null,
     Object? filterCountriesList = null,
+    Object? favoritesList = null,
   }) {
     return _then(_$InitialImpl(
       isLoading: null == isLoading
@@ -643,6 +1185,10 @@ class __$$InitialImplCopyWithImpl<$Res>
           ? _value._filterCountriesList
           : filterCountriesList // ignore: cast_nullable_to_non_nullable
               as List<CountryModel>,
+      favoritesList: null == favoritesList
+          ? _value._favoritesList
+          : favoritesList // ignore: cast_nullable_to_non_nullable
+              as List<CountryModel>,
     ));
   }
 }
@@ -656,9 +1202,11 @@ class _$InitialImpl implements _Initial {
       required this.errorMessage,
       required final List<CountryModel> countriesList,
       required this.isConnected,
-      required final List<CountryModel> filterCountriesList})
+      required final List<CountryModel> filterCountriesList,
+      required final List<CountryModel> favoritesList})
       : _countriesList = countriesList,
-        _filterCountriesList = filterCountriesList;
+        _filterCountriesList = filterCountriesList,
+        _favoritesList = favoritesList;
 
   @override
   final bool isLoading;
@@ -686,9 +1234,17 @@ class _$InitialImpl implements _Initial {
     return EqualUnmodifiableListView(_filterCountriesList);
   }
 
+  final List<CountryModel> _favoritesList;
+  @override
+  List<CountryModel> get favoritesList {
+    if (_favoritesList is EqualUnmodifiableListView) return _favoritesList;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_favoritesList);
+  }
+
   @override
   String toString() {
-    return 'HomeState(isLoading: $isLoading, isError: $isError, errorMessage: $errorMessage, countriesList: $countriesList, isConnected: $isConnected, filterCountriesList: $filterCountriesList)';
+    return 'HomeState(isLoading: $isLoading, isError: $isError, errorMessage: $errorMessage, countriesList: $countriesList, isConnected: $isConnected, filterCountriesList: $filterCountriesList, favoritesList: $favoritesList)';
   }
 
   @override
@@ -706,7 +1262,9 @@ class _$InitialImpl implements _Initial {
             (identical(other.isConnected, isConnected) ||
                 other.isConnected == isConnected) &&
             const DeepCollectionEquality()
-                .equals(other._filterCountriesList, _filterCountriesList));
+                .equals(other._filterCountriesList, _filterCountriesList) &&
+            const DeepCollectionEquality()
+                .equals(other._favoritesList, _favoritesList));
   }
 
   @override
@@ -717,7 +1275,8 @@ class _$InitialImpl implements _Initial {
       errorMessage,
       const DeepCollectionEquality().hash(_countriesList),
       isConnected,
-      const DeepCollectionEquality().hash(_filterCountriesList));
+      const DeepCollectionEquality().hash(_filterCountriesList),
+      const DeepCollectionEquality().hash(_favoritesList));
 
   /// Create a copy of HomeState
   /// with the given fields replaced by the non-null parameter values.
@@ -735,7 +1294,8 @@ abstract class _Initial implements HomeState {
       required final String errorMessage,
       required final List<CountryModel> countriesList,
       required final bool isConnected,
-      required final List<CountryModel> filterCountriesList}) = _$InitialImpl;
+      required final List<CountryModel> filterCountriesList,
+      required final List<CountryModel> favoritesList}) = _$InitialImpl;
 
   @override
   bool get isLoading;
@@ -749,6 +1309,8 @@ abstract class _Initial implements HomeState {
   bool get isConnected;
   @override
   List<CountryModel> get filterCountriesList;
+  @override
+  List<CountryModel> get favoritesList;
 
   /// Create a copy of HomeState
   /// with the given fields replaced by the non-null parameter values.

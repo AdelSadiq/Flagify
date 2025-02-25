@@ -6,6 +6,11 @@ part 'country_model.g.dart';
 @JsonSerializable()
 @HiveType(typeId: 0)
 class CountryModel extends HiveObject {
+  CountryModel get copy {
+    final objectInstance = CountryModel(code: code, name: name, emoji: emoji);
+    return objectInstance;
+  }
+
   @HiveField(0)
   final String code;
 

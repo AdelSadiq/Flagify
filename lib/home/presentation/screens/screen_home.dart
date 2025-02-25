@@ -1,11 +1,11 @@
 import 'package:flagify/core/colors/colors.dart';
 import 'package:flagify/core/constants/error_constants.dart';
 import 'package:flagify/core/theme/theme.dart';
-import 'package:flagify/presentation/home/application/home_bloc.dart';
-import 'package:flagify/presentation/home/application/home_utils.dart';
-import 'package:flagify/presentation/widgets/shimmer_container.dart';
-import 'package:flagify/presentation/widgets/widget_error_view.dart';
-import 'package:flagify/presentation/widgets/widget_search_bar.dart';
+import 'package:flagify/home/presentation/bloc/home_bloc.dart';
+import 'package:flagify/home/presentation/screens/home_utils.dart';
+import 'package:flagify/widgets/shimmer_container.dart';
+import 'package:flagify/widgets/widget_error_view.dart';
+import 'package:flagify/widgets/widget_search_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:pull_to_refresh/pull_to_refresh.dart';
@@ -78,12 +78,23 @@ class _ScreenHomeState extends State<ScreenHome> with HomeProperties {
             padding: EdgeInsets.symmetric(horizontal: 10),
             itemBuilder: (BuildContext context, int index) {
               final country = state.filterCountriesList[index];
+              final isFavorite =
+                  state.favoritesList.any((e) => country.name == e.name);
               return Card(
-                  child: ListTile(
-                      leading: Text(country.emoji),
-                      title: Text(country.name, style: textTheme.bodyLarge),
-                      subtitle:
-                          Text(country.code, style: textTheme.bodyMedium)));
+                child: ListTile(
+                  leading: Text(country.emoji),
+                  title: Text(country.name, style: textTheme.bodyLarge),
+                  subtitle: Text(country.code, style: textTheme.bodyMedium),
+                  trailing: GestureDetector(
+                    onTap: () => homeBloc.add(!isFavorite
+                        ? HomeEvent.addToFavorites(country: country)
+                        : HomeEvent.removeFromFavorites(country: country)),
+                    child: isFavorite
+                        ? Icon(Icons.favorite, color: kToasterRedColor)
+                        : Icon(Icons.favorite_border),
+                  ),
+                ),
+              );
             }),
       )),
     ]);

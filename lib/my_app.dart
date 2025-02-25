@@ -1,5 +1,5 @@
 import 'package:flagify/core/theme/theme.dart';
-import 'package:flagify/presentation/splash_screen/screen_splash.dart';
+import 'package:flagify/splash_screen/presentation/screens/screen_splash.dart';
 import 'package:flutter/material.dart';
 
 class MyApp extends StatelessWidget {

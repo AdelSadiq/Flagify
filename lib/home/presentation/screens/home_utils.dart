@@ -1,8 +1,8 @@
 import 'dart:async';
 
-import 'package:flagify/data/models/country_model/country_model.dart';
-import 'package:flagify/presentation/home/application/home_bloc.dart';
-import 'package:flagify/presentation/home/view/screen_home.dart';
+import 'package:flagify/home/domain/entities/country_model/country_model.dart';
+import 'package:flagify/home/presentation/bloc/home_bloc.dart';
+import 'package:flagify/home/presentation/screens/screen_home.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:internet_connection_checker/internet_connection_checker.dart';
@@ -20,7 +20,6 @@ mixin HomeProperties on State<ScreenHome> {
 extension HomeUtils on HomeProperties {
   void initFunction() {
     homeBloc = BlocProvider.of<HomeBloc>(context);
-    homeBloc.add(const HomeEvent.getCountriesList());
     connectionChecker.onStatusChange.listen(
       (InternetConnectionStatus status) {
         if (status == InternetConnectionStatus.connected) {
@@ -30,6 +29,9 @@ extension HomeUtils on HomeProperties {
         homeBloc.add(const HomeEvent.setIsConnected(isConnected: false));
       },
     );
+
+    homeBloc.add(const HomeEvent.getCountriesList());
+    homeBloc.add(const HomeEvent.getFavoritesList());
   }
 
   void filterCountries(List<CountryModel> countryList, String query) {
